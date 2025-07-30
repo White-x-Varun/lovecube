@@ -20,9 +20,10 @@
     </div>
   </div>
 
-  <audio autoplay loop>
+ <audio id="bg-music" loop>
   <source src="01 - Dagabaaz Re - DownloadMing.SE.mp3" type="audio/mpeg">
 </audio>
+
 
   
   <p class="caption">When Love Surrounds You From Every Angle 💞</p>
@@ -43,6 +44,12 @@ setInterval(() => {
     document.body.appendChild(heart);
     setTimeout(() => heart.remove(), 6000);
   }, 300);
+
+     const music = document.getElementById("bg-music");
+
+  window.addEventListener("click", () => {
+    music.play().catch((e) => console.log("Autoplay failed:", e));
+  });
 </script>
 
 
