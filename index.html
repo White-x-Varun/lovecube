@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="theme-color" content="#ff1a66">
+  <title>I LOVE YOU ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>I LOVE YOU <span>💖</span></h1>
+  <div class="scene">
+    <div id="popup" class="popup">You’re the center of my world 💘</div>
+
+    <div class="cube">
+      <div class="face front"><img src="1753874695368.webp" alt=""></div>
+      <div class="face back"><img src="1753874695383.jpg" alt=""></div>
+      <div class="face right"><img src="1753874695551.webp" alt=""></div>
+      <div class="face left"><img src="1753874695857.webp" alt=""></div>
+      <div class="face top"><img src="1753874695898.jpg" alt=""></div>
+      <div class="face bottom"><img src="1753874695948.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+  <source src="01 - Dagabaaz Re - DownloadMing.SE.mp3" type="audio/mpeg">
+</audio>
+
+  
+  <p class="caption">When Love Surrounds You From Every Angle 💞</p>
+  <script>
+  document.querySelector('.scene').addEventListener('click', () => {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 3000);
+  });
+</script>
+
+</body>
+</html>
